@@ -5,7 +5,7 @@ FROM golang
 
 
 # Uses dism.exe to install the IIS role.
-RUN go get https://github.com/sojij0y/SojiSource/APISample4
+RUN go get https://github.com/sojij0y/SojiSource
 
 WORKDIR /go/src/app
 
