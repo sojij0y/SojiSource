@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sampleapi4
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sampleapi4
+  template:
+    metadata:
+      labels:
+        app: sampleapi4
+    spec:
+      containers:
+      - name: sampleapi4
+        image: s0j1/s0j1-repository:dockerimages
+        ports:
+        - containerPort: 10000
